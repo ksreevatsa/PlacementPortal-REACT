@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const userAllJobs=async()=>{
     try{
-       const response =await axios.get('placementportal-springboot-production.up.railway.app/jobs/getall');
+       const response =await axios.get('https://placementportal-springboot-production.up.railway.app/jobs/getall');
        return response;
     }
     catch(error){

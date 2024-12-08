@@ -10,7 +10,7 @@ export const adminRegisterStudent=async(student,profilePhoto)=>{
             "student",
             new Blob([JSON.stringify(student)], { type: "application/json" })
           );
-    const response=await axios.post('placementportal-springboot-production.up.railway.app/admin/insertstudent',formData);
+    const response=await axios.post('https://placementportal-springboot-production.up.railway.app/admin/insertstudent',formData);
     return response.data;
     }
     catch(error)
