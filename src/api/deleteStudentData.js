@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const DeleteStudentData=async(id)=>{
     try{
-     const response=await axios.delete(`http://localhost:2004/admin/${id}`);
+     const response=await axios.delete(`placementportal-springboot-production.up.railway.app/admin/${id}`);
      return response;
     }
     catch(error)

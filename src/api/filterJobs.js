@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export const filterJobs=async(studentId)=>{
     try {
-        const response=await axios.get( `http://localhost:2004/jobs/filter?studentId=${studentId}`);
+        const response=await axios.get( `placementportal-springboot-production.up.railway.app/jobs/filter?studentId=${studentId}`);
         return response;
 
     } catch (error) {
